@@ -15,8 +15,12 @@ public class FizzBuzz {
         }
         if(stringBuilder.length()==0) {
 			stringBuilder.append(String.valueOf(number));
-		}
+        }
+        if(String.valueOf(number).contains("3")){
+            return "Fizz";
+        }
         return stringBuilder.toString();
-	}
+    }
+    
 
 }

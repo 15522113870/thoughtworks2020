@@ -3,9 +3,6 @@ package com.thoughtworks;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 
 
 
@@ -89,5 +86,23 @@ public class FizzBuzzTest {
 		//then
 		assertEquals("FizzBuzzWhizz",word);
     }
-    
+
+    @Test
+	public void should_return_Fizz_when_fizzBuzz_given_13() {
+		//given
+		int number=13;
+		//when
+		String word = FizzBuzz.fizzBuzz(number);
+		//then
+		assertEquals("Fizz",word);
+    }
+    @Test
+	public void should_return_Fizz_when_fizzBuzz_given_30() {
+		//given
+		int number=30;
+		//when
+		String word = FizzBuzz.fizzBuzz(number);
+		//then
+		assertEquals("Fizz",word);
+    }
 }
