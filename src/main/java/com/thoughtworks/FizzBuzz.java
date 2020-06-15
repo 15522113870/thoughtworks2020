@@ -13,11 +13,11 @@ public class FizzBuzz {
         if(number%7 == 0){
             stringBuilder.append("Whizz");
         }
-        if(stringBuilder.length()==0) {
-			stringBuilder.append(String.valueOf(number));
-        }
         if(String.valueOf(number).contains("3")){
             return "Fizz";
+        }
+        if(stringBuilder.length()==0) {
+			stringBuilder.append(String.valueOf(number));
         }
         return stringBuilder.toString();
     }
