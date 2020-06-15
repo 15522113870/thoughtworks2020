@@ -40,4 +40,14 @@ public class FizzBuzzTest {
         assertEquals(word, "Buzz");
 	}
 
+    @Test
+	public void should_return_Whizz_when_fizzBuzz_given_7() {
+		//given
+		int number=7;
+		//when
+		String word = FizzBuzz.fizzBuzz(number);
+		//then
+		assertEquals("Whizz",word);
+    }
+    
 }

@@ -10,6 +10,9 @@ public class FizzBuzz {
         if(number%5 == 0){
             stringBuilder.append("Buzz");
         }
+        if(number%7 == 0){
+            stringBuilder.append("Whizz");
+        }
         if(stringBuilder.length()==0) {
 			stringBuilder.append(String.valueOf(number));
 		}
