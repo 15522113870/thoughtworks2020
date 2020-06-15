@@ -4,7 +4,7 @@ public class FizzBuzz {
 
 	public static String fizzBuzz(int number) {
         StringBuilder stringBuilder=new StringBuilder();
-        if(number%3 == 0){
+        if(number%3 == 0 && !String.valueOf(number).contains("5")){
             stringBuilder.append("Fizz");
         }
         if(number%5 == 0){
@@ -12,6 +12,9 @@ public class FizzBuzz {
         }
         if(number%7 == 0){
             stringBuilder.append("Whizz");
+        }
+        if(String.valueOf(number).contains("5")){
+            return stringBuilder.toString();
         }
         if(String.valueOf(number).contains("3")){
             return "Fizz";
